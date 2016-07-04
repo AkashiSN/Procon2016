@@ -1,0 +1,25 @@
+﻿<Window x:Class="ShowImageWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ShowImageWPF"
+        mc:Ignorable="d"
+        Icon="/ShowImageWPF;component/app.ico"
+        Title="Show Image WPF" Height="480" Width="640">
+    <DockPanel>
+        <!-- メニューを画面上部に配置 -->
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="ファイル(_F)">
+                <MenuItem Header="開く...(_O)" Click="menuOpen_Click" />
+                <Separator />
+                <MenuItem Header="終了(_X)" Click="menuExit_Click" />
+            </MenuItem>
+        </Menu>
+
+        <!-- 画像表示(Imageコントロール)を画面下部に配置 -->
+        <Grid DockPanel.Dock="Bottom" Name="grid" Background="DarkGray">
+            <Image Name="image" Stretch="Uniform" />
+        </Grid>
+    </DockPanel>
+</Window>

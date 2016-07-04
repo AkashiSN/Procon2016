@@ -1,0 +1,16 @@
+D:\nishi\Documents\Visual Studio 2015\Projects\ShowImageWPFSolution\ShowImageWPF\bin\Release\ShowImageWPF.exe.config
+D:\nishi\Documents\Visual Studio 2015\Projects\ShowImageWPFSolution\ShowImageWPF\bin\Release\ShowImageWPF.exe
+D:\nishi\Documents\Visual Studio 2015\Projects\ShowImageWPFSolution\ShowImageWPF\bin\Release\ShowImageWPF.pdb
+D:\nishi\Documents\Visual Studio 2015\Projects\ShowImageWPFSolution\ShowImageWPF\bin\Release\OpenCVWPFLib.dll
+D:\nishi\Documents\Visual Studio 2015\Projects\ShowImageWPFSolution\ShowImageWPF\bin\Release\OpenCVWPFLib.pdb
+D:\nishi\Documents\Visual Studio 2015\Projects\ShowImageWPFSolution\ShowImageWPF\obj\Release\ShowImageWPF.csprojResolveAssemblyReference.cache
+D:\nishi\Documents\Visual Studio 2015\Projects\ShowImageWPFSolution\ShowImageWPF\obj\Release\MainWindow.g.cs
+D:\nishi\Documents\Visual Studio 2015\Projects\ShowImageWPFSolution\ShowImageWPF\obj\Release\App.g.cs
+D:\nishi\Documents\Visual Studio 2015\Projects\ShowImageWPFSolution\ShowImageWPF\obj\Release\ShowImageWPF_MarkupCompile.cache
+D:\nishi\Documents\Visual Studio 2015\Projects\ShowImageWPFSolution\ShowImageWPF\obj\Release\ShowImageWPF_MarkupCompile.lref
+D:\nishi\Documents\Visual Studio 2015\Projects\ShowImageWPFSolution\ShowImageWPF\obj\Release\MainWindow.baml
+D:\nishi\Documents\Visual Studio 2015\Projects\ShowImageWPFSolution\ShowImageWPF\obj\Release\ShowImageWPF.g.resources
+D:\nishi\Documents\Visual Studio 2015\Projects\ShowImageWPFSolution\ShowImageWPF\obj\Release\ShowImageWPF.Properties.Resources.resources
+D:\nishi\Documents\Visual Studio 2015\Projects\ShowImageWPFSolution\ShowImageWPF\obj\Release\ShowImageWPF.csproj.GenerateResource.Cache
+D:\nishi\Documents\Visual Studio 2015\Projects\ShowImageWPFSolution\ShowImageWPF\obj\Release\ShowImageWPF.exe
+D:\nishi\Documents\Visual Studio 2015\Projects\ShowImageWPFSolution\ShowImageWPF\obj\Release\ShowImageWPF.pdb

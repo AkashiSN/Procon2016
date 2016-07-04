@@ -1,0 +1,26 @@
+﻿  Stdafx.cpp
+C:\tools\opencv\mybuild\install\include\opencv2/core/mat.hpp(1965): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\tools\opencv\mybuild\install\include\opencv2/core/persistence.hpp : warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\tools\opencv\mybuild\install\include\opencv2/core/utility.hpp : warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\tools\opencv\mybuild\install\include\opencv2/core/utility.hpp : warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+c:\tools\opencv\mybuild\install\include\opencv2\core\cvstd.hpp(599): warning C4793: cv::String::String': ネイティブ関数としてコンパイルされました:
+  	マネージ コードでサポートされていない組み込み型が見つかりました
+c:\tools\opencv\mybuild\install\include\opencv2\core\mat.inl.hpp(392): warning C4793: cv::Mat::Mat': ネイティブ関数としてコンパイルされました:
+  	マネージ コードでサポートされていない組み込み型が見つかりました
+c:\tools\opencv\mybuild\install\include\opencv2\core\mat.inl.hpp(1872): warning C4793: cv::SparseMat::addref': ネイティブ関数としてコンパイルされました:
+  	マネージ コードでサポートされていない組み込み型が見つかりました
+c:\tools\opencv\mybuild\install\include\opencv2\core\mat.inl.hpp(3473): warning C4793: cv::UMat::addref': ネイティブ関数としてコンパイルされました:
+  	マネージ コードでサポートされていない組み込み型が見つかりました
+c:\tools\opencv\mybuild\install\include\opencv2\core\ptr.inl.hpp(67): warning C4793: cv::detail::PtrOwner::incRef': ネイティブ関数としてコンパイルされました:
+  	マネージ コードでサポートされていない組み込み型が見つかりました
+c:\tools\opencv\mybuild\install\include\opencv2\core\ptr.inl.hpp(72): warning C4793: cv::detail::PtrOwner::decRef': ネイティブ関数としてコンパイルされました:
+  	マネージ コードでサポートされていない組み込み型が見つかりました
+  AssemblyInfo.cpp
+  OpenCVMat.cpp
+  OpenCVMatCLI.cpp
+  コードを生成中...
+c:\tools\opencv\mybuild\install\include\opencv2\core\mat.inl.hpp(681): warning C4793: cv::Mat::release': ネイティブ関数としてコンパイルされました:
+  	マネージ コードでサポートされていない組み込み型が見つかりました
+  .NETFramework,Version=v4.5.2.AssemblyAttributes.cpp
+  OpenCVWPFLib.vcxproj -> D:\nishi\Documents\Visual Studio 2015\Projects\ShowImageWPFSolution\Release\OpenCVWPFLib.dll
+  OpenCVWPFLib.vcxproj -> D:\nishi\Documents\Visual Studio 2015\Projects\ShowImageWPFSolution\Release\OpenCVWPFLib.pdb (Full PDB)
