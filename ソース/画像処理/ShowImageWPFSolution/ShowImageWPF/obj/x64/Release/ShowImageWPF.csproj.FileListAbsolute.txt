@@ -12,3 +12,5 @@ D:\nishi\Documents\Visual Studio 2015\Projects\ShowImageWPFSolution\ShowImageWPF
 D:\nishi\Documents\Visual Studio 2015\Projects\ShowImageWPFSolution\ShowImageWPF\obj\x64\Release\ShowImageWPF.Properties.Resources.resources
 D:\nishi\Documents\Visual Studio 2015\Projects\ShowImageWPFSolution\ShowImageWPF\obj\x64\Release\ShowImageWPF.csproj.GenerateResource.Cache
 D:\nishi\Documents\Visual Studio 2015\Projects\ShowImageWPFSolution\ShowImageWPF\obj\x64\Release\ShowImageWPF.exe
+D:\nishi\Documents\GitHub\Procon2016\ソース\画像処理\ShowImageWPFSolution\ShowImageWPF\bin\x64\Release\ShowImageWPF.exe.config
+D:\nishi\Documents\GitHub\Procon2016\ソース\画像処理\ShowImageWPFSolution\ShowImageWPF\obj\x64\Release\ShowImageWPF.exe
