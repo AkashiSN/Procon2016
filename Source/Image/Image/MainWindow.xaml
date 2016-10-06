@@ -1,0 +1,67 @@
+﻿<Window x:Class="test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:test"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="496" Width="600">
+    <StackPanel VerticalAlignment="Top" >
+        <DockPanel>
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="ファイル(_F)">
+                    <MenuItem Header="開く...(_O)" Click="OpenFile"/>
+                </MenuItem>
+            </Menu>
+        </DockPanel>
+        <Grid Height="447" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="567*"/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="Path"  HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.132,0.192" Width="497" Height="29" Grid.ColumnSpan="2"/>
+            <Grid Margin="7,73,400,274" Grid.Column="1">
+                <Button x:Name="Thresholded" Content="2値化" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.133,0.25" Click="Thresholded_Click" Margin="18,80,0,0"/>
+                <Label x:Name="label1" Content="Thresholdの閾値" Margin="10,0,42,75" Height="25"/>
+                <Slider x:Name="Threshold_1" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="105" Maximum="255" Value="226" RenderTransformOrigin="1.19,0.05" Margin="0,28,0,0"/>
+                <Slider x:Name="Threshold_2" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="105" Maximum="255" Value="255" Margin="0,53,0,0"/>
+                <TextBlock Text="{Binding Value, ElementName=Threshold_1}" Width="50" Height="20" Margin="110,28,0,52" />
+                <TextBlock Text="{Binding Value, ElementName=Threshold_2}" Width="50" Height="20" RenderTransformOrigin="-0.1,0.5" Margin="110,53,0,27" />
+            </Grid>
+            <Grid Margin="175,73,232,274" Grid.Column="1">
+                <Button x:Name="CannyEdge" Content="Cannyエッジ検出" HorizontalAlignment ="Left"  Width="95" Click="Canny" Height="20" Margin="0,80,0,0"/>
+                <Label x:Name="label" Content="Cannyエッジの閾値" Height="25" Margin="0,0,41,75"/>
+                <Slider x:Name="CannyEdge_1" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="105" Maximum="255" Value="180" Margin="0,28,0,0" />
+                <Slider x:Name="CannyEdge_2" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="105" Maximum="255" Value="130" Margin="0,53,0,0"/>
+                <TextBlock Text="{Binding Value, ElementName=CannyEdge_1}" Width="50" Height="20" Margin="110,28,0,52" />
+                <TextBlock Text="{Binding Value, ElementName=CannyEdge_2}" RenderTransformOrigin="3,0.5" Height="20" Width="50" Margin="110,53,0,27" />
+            </Grid>
+            <TextBox x:Name="message" HorizontalAlignment="Left" Height="120" Margin="20,302,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="545" Text="出力メッセージ" Grid.ColumnSpan="2" />
+            <Button x:Name="GrayScal" Content="グレースケール" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80" Click="Gray_button" RenderTransformOrigin="0.8,1.9" Margin="110,44,0,0" Grid.Column="1"/>
+            <Button x:Name="gauss_filter" Content="ガウシアン" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80" Margin="215,44,0,0" Click="gauss_filter_Click" Grid.Column="1"/>
+            <Button x:Name="polygondetection" Content="多角形検出" HorizontalAlignment="Left" Margin="7,242,0,0" VerticalAlignment="Top" Width="130" Click="polygondetection_Click" Grid.Column="1"/>
+            <Button x:Name="list_save" Content="多角形座標を書き出し" HorizontalAlignment="Left" Margin="175,242,0,0" VerticalAlignment="Top" Width="130" Click="list_save_Click" Grid.Column="1"/>
+            <Button x:Name="dilate" Content="膨張" HorizontalAlignment="Left" Margin="90,192,0,0" VerticalAlignment="Top" Width="39" Click="dilate_Click" Grid.Column="1"/>
+            <Button x:Name="erode" Content="収縮" HorizontalAlignment="Left" Margin="151,192,0,0" VerticalAlignment="Top" Width="39" Click="erode_Click" Grid.Column="1"/>
+            <Grid Grid.Column="1" Margin="368,181,22,190">
+                <TextBox x:Name="Frame_Number" HorizontalAlignment="Left" Height="19" Margin="105,6,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="40" RenderTransformOrigin="1.6,1"/>
+                <Label x:Name="Framer" Content="枠の穴抜きの数：" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="100"/>
+                <Button x:Name="Frame_Out" Content="枠の出力" HorizontalAlignment="Left" Margin="9,56,0,0" VerticalAlignment="Top" Width="75" Click="Frame_Out_Click"/>
+                <TextBox x:Name="Piece_Number" HorizontalAlignment="Left" Height="19" Margin="105,31,0,0" TextWrapping="Wrap" Text="50" VerticalAlignment="Top" Width="40" RenderTransformOrigin="1.6,1"/>
+                <Label x:Name="Piece" Content="ピースの数：" HorizontalAlignment="Left" Height="25" Margin="0,25,0,0" VerticalAlignment="Top" Width="100"/>
+                <Button x:Name="Piece_Out" Content="ピースの出力" HorizontalAlignment="Left" Margin="89,56,0,0" VerticalAlignment="Top" Width="75" Click="Piece_Out_Click"/>
+            </Grid>
+            <Button x:Name="Reset" Content="リセット" HorizontalAlignment="Left" Margin="7,44,0,0" VerticalAlignment="Top" Width="75" Click="Reset_Click" Grid.Column="1"/>
+            <Grid Grid.Column="1" Margin="372,62,22,320">
+                <Label Content="画像の短辺の長さ　  　mm" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="173"/>
+                <Label Content="ピース間の最小間隔　　mm" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="173" Margin="0,35,0,0"/>
+                <TextBox x:Name="peace_min_interval" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="20" Margin="103,39,0,0"/>
+                <TextBox x:Name="image_size_mm" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" Text="200" VerticalAlignment="Top" Width="29" Margin="94,4,0,0"/>
+            </Grid>
+            <Grid Grid.Column="1" Margin="325,38,111,383">
+                <Label x:Name="label2" Content="表示倍率                 %" HorizontalAlignment="Left" VerticalAlignment="Top" Width="131"/>
+                <TextBox x:Name="magnification" HorizontalAlignment="Left" Height="23" Margin="68,3,0,0" TextWrapping="Wrap" Text="25" VerticalAlignment="Top" Width="35"/>
+            </Grid>
+        </Grid>
+    </StackPanel>
+</Window>
